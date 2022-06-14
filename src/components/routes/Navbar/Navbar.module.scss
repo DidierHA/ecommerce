@@ -1,0 +1,31 @@
+.navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+  
+    .logo {
+      height: 100%;
+      width: 70px;
+      padding: 25px;
+    }
+  
+    .navbarLinks {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  
+      .navbarLink {
+        padding: 10px 15px;
+        cursor: pointer;
+        color:gray;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Los módulos de SASS no permiten escribir clases con guiones (Se debe usar camelCase)
+

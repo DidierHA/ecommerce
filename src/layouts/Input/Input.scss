@@ -1,0 +1,18 @@
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+input {
+    border: 0;
+    border-bottom: 1px solid #e5e5e5;
+    outline: none;
+    color: #c5c3c6;
+    padding: 5px 0;
+    width: 100%;
+
+    &:focus {
+        border-bottom: 1px solid #c5c3c6;
+    }
+
+}
