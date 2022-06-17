@@ -29,10 +29,7 @@ const FormularioAcceso = () => {
     evento.preventDefault();
 
     try {
-      const respuesta = await signInWithEmailPasswordForFirestore(
-        correo,
-        contrasena
-      );
+      await signInWithEmailPasswordForFirestore(correo, contrasena);
     } catch (error) {
       errorAutenticacion(error.code);
       console.error(error.code);
