@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nombre": "zapatos",
+    "imagenUrl": "https://i.ebayimg.com/thumbs/images/g/hSkAAOSw96leBoP0/s-l960.jpg",
+    "precio": 50
+  },
+  {
+    "id": 2,
+    "nombre": "zapatos",
+    "imagenUrl": "https://i.ebayimg.com/thumbs/images/g/hSkAAOSw96leBoP0/s-l960.jpg",
+    "precio": 50
+  },
+  {
+    "id": 3,
+    "nombre": "zapatos",
+    "imagenUrl": "https://i.ebayimg.com/thumbs/images/g/hSkAAOSw96leBoP0/s-l960.jpg",
+    "precio": 50
+  },
+  {
+    "id": 4,
+    "nombre": "zapatos",
+    "imagenUrl": "https://i.ebayimg.com/thumbs/images/g/hSkAAOSw96leBoP0/s-l960.jpg",
+    "precio": 50
+  },
+  {
+    "id": 5,
+    "nombre": "zapatos",
+    "imagenUrl": "https://i.ebayimg.com/thumbs/images/g/hSkAAOSw96leBoP0/s-l960.jpg",
+    "precio": 50
+  }
+]
