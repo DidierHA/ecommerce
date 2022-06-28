@@ -1,0 +1,24 @@
+.contenedor-dropdown {
+    position: absolute;
+    border: 1px solid gray;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    z-index: 2;
+    right: 25px;
+    top: 55px;
+
+    .items-carrito {
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    button {
+        margin-top: 15px;
+    }
+}

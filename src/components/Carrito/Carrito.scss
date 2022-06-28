@@ -1,0 +1,21 @@
+.contenedor-carrito {
+    height: 25px;
+    width: 25px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    .logo-carrito {
+        height: 25px;
+        width: 25px;
+    }
+    
+    .contador-carrito {
+        position: absolute;
+        bottom: 0;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}

@@ -4,6 +4,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 import { UsuarioProvider } from './contexts/usuarios';
 import { ProductosProvider } from './contexts/productos';
+import { CarritoProvider } from './contexts/carrito';
 
 import App from './components/App';
 
@@ -14,7 +15,9 @@ root.render(
   <BrowserRouter>
     <UsuarioProvider>
       <ProductosProvider>
-        <App />
+        <CarritoProvider>
+          <App />
+        </CarritoProvider>
       </ProductosProvider>
     </UsuarioProvider>
   </BrowserRouter>
