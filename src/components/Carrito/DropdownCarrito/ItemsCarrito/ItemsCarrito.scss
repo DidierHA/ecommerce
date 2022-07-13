@@ -1,0 +1,29 @@
+.contenedor-item-carrito {
+    height: 75px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    border-bottom: 1px dotted gray;
+    margin: 5px 0;
+    padding: 5px 0;
+
+    img {
+        width: 30%;
+    }
+
+    .texto-item-carrito {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 5px;
+
+        h3 {
+            font-size: 15px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+}
