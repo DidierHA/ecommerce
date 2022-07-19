@@ -8,12 +8,14 @@ import ItemsCarrito from './ItemsCarrito/ItemsCarrito';
 import './DropdownCarrito.scss';
 
 const DropdownCarrito = () => {
-  const { itemsCarrito } = useContext(CarritoContext);
+  const { mostrarCarrito, itemsCarrito, setMostrarCarrito } =
+    useContext(CarritoContext);
 
   let navigate = useNavigate();
 
   const handleOnClick = () => {
     navigate('/pagar');
+    setMostrarCarrito(!mostrarCarrito);
   };
 
   return (
