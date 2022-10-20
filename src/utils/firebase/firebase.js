@@ -8,7 +8,14 @@ import {
   signOut,
   onAuthStateChanged,
 } from 'firebase/auth';
-import { getFirestore, doc, getDoc, setDoc } from 'firebase/firestore';
+import {
+  getFirestore,
+  doc,
+  getDoc,
+  setDoc,
+  collection,
+  writeBatch,
+} from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -36,6 +43,20 @@ export const signInWithGooglePopup = () => {
 };
 
 export const db = getFirestore();
+
+export const agregarColeccionYDocumentos = async (coleccion, documentos) => {
+  const coleccionRef = collection(db, coleccion);
+  const batch = writeBatch(db);
+
+  documentos.forEach((documento) => {
+    const docRef = doc(coleccionRef, documento.titulo.toLowerCase());
+    batch.set(docRef, documento);
+  });
+
+  await batch.commit();
+
+  console.log('Colección y documentos subidos');
+};
 
 export const crearDocumentoUsuarios = async (usuario, informacionAdicional) => {
   if (!usuario) return;
